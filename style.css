@@ -1,0 +1,139 @@
+
+/* הגדרות כלליות */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #243047;
+}
+
+/* כותרת עליונה */
+header {
+    background: #243047;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 5px solid #e6a15c;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0 0 12px;
+}
+
+header p {
+    font-size: 18px;
+    color: #e6c9a8;
+}
+
+/* שלוש העמודות */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    background: #fffaf2;
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid #e6a15c;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.column h2 {
+    color: #243047;
+    font-size: 25px;
+    border-bottom: 3px solid #e6a15c;
+    padding-bottom: 12px;
+}
+
+.column ul {
+    padding-right: 20px;
+    line-height: 2.5;
+}
+
+.column li {
+    margin-bottom: 8px;
+}
+
+/* קישורים */
+a {
+    color: #a34f42;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    background: #a34f42;
+    padding: 5px 9px;
+    border-radius: 6px;
+}
+
+/* תמונת השראה */
+.column img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* מסגרת מיוחדת */
+.special-box {
+    border: 3px dashed #a34f42;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    background: #f5e4d1;
+}
+
+/* תחתית האתר */
+footer {
+    background: #243047;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+/* התאמה לטלפונים */
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+/* אזור קצת עליי */
+.about {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    margin: 35px auto 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about h2 {
+    color: #243047;
+    border-bottom: 2px solid #e6a15c;
+    padding-bottom: 10px;
+}
+
+}
